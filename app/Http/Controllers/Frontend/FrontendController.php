@@ -9,7 +9,6 @@ class FrontendController extends Controller
 {
     public function index()
     {
-        dd('ok');
         return view('frontend.pages.index');
     }
     public function wishlist()
