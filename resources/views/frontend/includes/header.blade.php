@@ -3,7 +3,7 @@
         <div class="container">
             <div class="main-header-three__wrapper-inner clearfix">
                 <div class="main-header-three__logo">
-                    <a href="{{ route('/') }}"><img src="https://indigoshopify.com/assets/img/logo.png" alt=""></a>
+                    <a href="{{ route('frontend.home') }}"><img src="https://indigoshopify.com/assets/img/logo.png" alt=""></a>
                 </div>
                 <div class="main-header-three__right">
                     <div class="main-header-three__top">

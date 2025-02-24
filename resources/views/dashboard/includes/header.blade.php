@@ -42,7 +42,7 @@
                     <div class="collapse menu-dropdown" id="sidebarEcommerce">
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
-                                <a href="{{ route('/') }}" class="nav-link" data-key="t-dashboard"> Dashboard
+                                <a href="{{ route('frontend.home') }}" class="nav-link" data-key="t-dashboard"> Dashboard
                                 </a>
                             </li>
                             <li class="nav-item">

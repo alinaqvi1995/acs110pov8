@@ -10,7 +10,8 @@ use App\Http\Controllers\Dashboard\TagController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Frontend\FrontendController;
 
-Route::get('/', [FrontendController::class, 'index'])->name('/');
+// Route::get('/', [FrontendController::class, 'index'])->name('/');
+Route::get('/', [FrontendController::class, 'index'])->name('frontend.home');
 Route::get('/products', [FrontendController::class, 'products'])->name('frontend.products');
 Route::get('/products/detail', [FrontendController::class, 'productsdetail'])->name('frontend.products.detail');
 Route::get('/wishlist', [FrontendController::class, 'wishlist'])->name('frontend.wishlist');
