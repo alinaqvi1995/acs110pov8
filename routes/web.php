@@ -8,7 +8,7 @@ use App\Http\Controllers\Dashboard\BrandController;
 use App\Http\Controllers\Dashboard\UnitController;
 use App\Http\Controllers\Dashboard\TagController;
 use App\Http\Controllers\ProfileController;
-use App\Http\Controllers\frontend\FrontendController;
+use App\Http\Controllers\Frontend\FrontendController;
 
 Route::get('/', [FrontendController::class, 'index'])->name('/');
 Route::get('/products', [FrontendController::class, 'products'])->name('frontend.products');
