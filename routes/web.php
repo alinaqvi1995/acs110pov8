@@ -29,12 +29,14 @@ use App\Http\Controllers\Dashboard\BrandController;
 use App\Http\Controllers\Dashboard\UnitController;
 use App\Http\Controllers\Dashboard\TagController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Frontend\FrontendController;
 
 // Route::get('/', [FrontendController::class, 'index'])->name('/');
-Route::get('/', function () {
-    return view('frontend.pages.index');
-})->name('frontend.home');
+// Route::get('/', function () {
+//     return view('frontend.pages.index');
+// })->name('frontend.home');
+Route::get('/', [HomeController::class, 'index'])->name('frontend.home');
 // Route::get('/home', [FrontendController::class, 'index'])->name('frontend.home');
 Route::get('/products', [FrontendController::class, 'products'])->name('frontend.products');
 Route::get('/products/detail', [FrontendController::class, 'productsdetail'])->name('frontend.products.detail');
